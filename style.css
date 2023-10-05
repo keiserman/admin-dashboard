@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
+
+:root {
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+  --gray-950: #030712;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  color: var(--gray-900);
+}
+
+.container {
+  background-color: var(--gray-100);
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+  grid-template-rows: 6rem 1fr;
+}
+
+.sidebar {
+  background-color: var(--gray-900);
+  grid-column: 1fr;
+  color: white;
+  padding: 1rem;
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.sidebar-title {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu a {
+  color: var(--gray-400);
+  text-decoration: none;
+  padding: 1rem;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 10rem;
+}
+
+.menu a:hover {
+  background-color: var(--gray-700);
+  color: white;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+  padding: 1rem;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  grid-area: 1;
+}
+
+.search-bar i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+input {
+  border: none;
+  background-color: var(--gray-100);
+  min-height: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10rem;
+  width: 100%;
+}
