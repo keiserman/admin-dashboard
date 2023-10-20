@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600&display=swap");
 
 :root {
   --gray-50: #f9fafb;
@@ -24,7 +24,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: 20rem 1fr;
-  grid-template-rows: 6rem 1fr;
+  grid-template-rows: 5rem 1fr;
 }
 
 .sidebar {
@@ -71,6 +71,18 @@ body {
   grid-template-columns: 1fr 1fr;
   background-color: white;
   padding: 1rem;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon {
+  font-size: 1.5rem;
 }
 
 .search-bar {
@@ -79,8 +91,15 @@ body {
   grid-area: 1;
 }
 
+.profile {
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .search-bar i {
-  font-size: 1.5rem;
   margin-right: 0.5rem;
 }
 
@@ -88,7 +107,12 @@ input {
   border: none;
   background-color: var(--gray-100);
   min-height: 2rem;
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 1rem;
   border-radius: 10rem;
   width: 100%;
+}
+
+.profile-picture {
+  width: 1.5rem;
+  height: 1.5rem;
 }
