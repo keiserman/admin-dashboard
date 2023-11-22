@@ -10,18 +10,22 @@
   </head>
   <body>
     <div class="container">
-      <div class="sidebar">
+      <div id="sidebar">
         <div class="sidebar-title">Dashboard</div>
         <div class="menu">
-          <a href="#"><i class="ph-fill ph-house"></i>Home</a>
-          <a href="#"><i class="ph-fill ph-user"></i>Profile</a>
-          <a href="#"><i class="ph-fill ph-chat-circle-dots"></i>Messages</a>
-          <a href="#"><i class="ph-fill ph-clock"></i>History</a>
-          <a href="#"><i class="ph-fill ph-check-square"></i>Tasks</a>
-          <a href="#"><i class="ph-fill ph-users"></i>Communities</a>
+          <a href="#" class="active"><i class="icon ph ph-house"></i>Home</a>
+          <a href="#"><i class="icon ph ph-user"></i>Profile</a>
+          <a href="#"><i class="icon ph ph-chat-circle-dots"></i>Messages</a>
+          <a href="#"><i class="icon ph ph-clock"></i>History</a>
+          <a href="#"><i class="icon ph ph-check-square"></i>Tasks</a>
+          <a href="#"><i class="icon ph ph-users"></i>Communities</a>
+          <div class="h-divider"></div>
+          <a href="#"><i class="icon ph ph-gear"></i>Settings</a>
+          <a href="#"><i class="icon ph ph-info"></i>Support</a>
+          <a href="#"><i class="icon ph ph-lock-simple"></i>Privacy</a>
         </div>
       </div>
-      <div class="header">
+      <div id="header">
         <form class="search-bar">
           <i class="icon ph ph-magnifying-glass"></i>
           <input
@@ -33,13 +37,188 @@
         </form>
         <div class="header-right">
           <i class="icon ph ph-bell"></i>
+          <div class="v-divider"></div>
           <a href="" class="profile">
-            <img class="profile-picture" src="" />
             <span>Morgan Oakley</span>
+            <i class="ph ph-caret-down"></i>
           </a>
         </div>
       </div>
-      <div class="content"></div>
+      <div class="content">
+        <div class="content-header">
+          <div>
+            <div class="greeting">Hi there,</div>
+            <div class="social-tag">Morgan Oakley (@morgan)</div>
+          </div>
+          <div class="button-wrapper">
+            <button type="button">New</button>
+            <button type="button">Upload</button>
+            <button type="button">New</button>
+          </div>
+        </div>
+        <div class="content-inner">
+          <div id="projects">
+            <div class="section-title">Your projects</div>
+            <div class="project-grid">
+              <div class="card">
+                <div class="project-info">
+                  <div class="card-title">Super Cool Project</div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+                <div class="project-icons">
+                  <a href="#"><i class="icon ph ph-star"></i></a>
+                  <a href="#"><i class="icon ph ph-eye"></i></a>
+                  <a href="#"><i class="icon ph ph-share-network"></i></a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="project-info">
+                  <div class="card-title">Less Cool Project</div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+                <div class="project-icons">
+                  <a href="#"><i class="icon ph ph-star"></i></a>
+                  <a href="#"><i class="icon ph ph-eye"></i></a>
+                  <a href="#"><i class="icon ph ph-share-network"></i></a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="project-info">
+                  <div class="card-title">Impossible App</div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+                <div class="project-icons">
+                  <a href="#"><i class="icon ph ph-star"></i></a>
+                  <a href="#"><i class="icon ph ph-eye"></i></a>
+                  <a href="#"><i class="icon ph ph-share-network"></i></a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="project-info">
+                  <div class="card-title">Easy Peasy App</div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+                <div class="project-icons">
+                  <a href="#"><i class="icon ph ph-star"></i></a>
+                  <a href="#"><i class="icon ph ph-eye"></i></a>
+                  <a href="#"><i class="icon ph ph-share-network"></i></a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="project-info">
+                  <div class="card-title">Ad Blocker</div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+                <div class="project-icons">
+                  <a href="#"><i class="icon ph ph-star"></i></a>
+                  <a href="#"><i class="icon ph ph-eye"></i></a>
+                  <a href="#"><i class="icon ph ph-share-network"></i></a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="project-info">
+                  <div class="card-title">Money Maker</div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+                <div class="project-icons">
+                  <a href="#"><i class="icon ph ph-star"></i></a>
+                  <a href="#"><i class="icon ph ph-eye"></i></a>
+                  <a href="#"><i class="icon ph ph-share-network"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="news">
+            <div class="section-title">Announcements</div>
+            <div class="card">
+              <div class="announcement-card">
+                <div class="card-title">Site Maintenance</div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="#">Read more</a>
+              </div>
+              <div class="h-divider"></div>
+              <div class="announcement-card">
+                <div class="card-title">Community Share Day</div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="#">Read more</a>
+              </div>
+              <div class="h-divider"></div>
+              <div class="announcement-card">
+                <div class="card-title">Updated Privacy Policy</div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div id="trending">
+            <div class="section-title">Trending</div>
+            <div class="card">
+              <div class="social-wrapper">
+                <img width="32" src="https://placehold.co/32x32" />
+                <div class="social-info">
+                  <div class="social-tag">@tegan</div>
+                  <div>World Peace Builder</div>
+                </div>
+              </div>
+              <div class="social-wrapper">
+                <img width="32" src="https://placehold.co/32x32" />
+                <div class="social-info">
+                  <div class="social-tag">@morgan</div>
+                  <div>Super Cool Project</div>
+                </div>
+              </div>
+              <div class="social-wrapper">
+                <img width="32" src="https://placehold.co/32x32" />
+                <div class="social-info">
+                  <div class="social-tag">@kendall</div>
+                  <div>Life Changing App</div>
+                </div>
+              </div>
+              <div class="social-wrapper">
+                <img width="32" src="https://placehold.co/32x32" />
+                <div class="social-info">
+                  <div class="social-tag">@alex</div>
+                  <div>No Traffic Maker</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

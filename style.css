@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 :root {
   --gray-50: #f9fafb;
@@ -15,24 +15,26 @@
 }
 
 body {
-  font-family: "DM Sans", sans-serif;
-  color: var(--gray-900);
+  font-family: "Inter", sans-serif;
+  color: var(--gray-800);
+}
+
+p {
+  color: var(--gray-500);
 }
 
 .container {
   background-color: var(--gray-100);
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 20rem 1fr;
   grid-template-rows: 5rem 1fr;
 }
 
-.sidebar {
+#sidebar {
   background-color: var(--gray-900);
-  grid-column: 1fr;
   color: white;
-  padding: 1rem;
-  font-size: 1.25rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -40,38 +42,66 @@ body {
 }
 
 .sidebar-title {
-  padding: 1rem;
   font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.v-divider {
+  height: 1.5rem;
+  width: 1px;
+  background-color: var(--gray-200);
 }
 
 .menu {
   display: flex;
   flex-direction: column;
+  gap: 0.25rem;
   width: 100%;
+  font-size: 1rem;
 }
 
 .menu a {
   color: var(--gray-400);
   text-decoration: none;
-  padding: 1rem;
+  padding: 0.5rem;
   transition: all 0.2s ease;
   display: flex;
   align-items: center;
-  gap: 1rem;
-  border-radius: 10rem;
+  gap: 0.75rem;
+  border-radius: 0.25rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
 }
 
-.menu a:hover {
-  background-color: var(--gray-700);
+.menu a:hover,
+a.active {
+  background-color: var(--gray-800);
   color: white;
 }
 
-.header {
+#sidebar .h-divider {
+  background-color: var(--gray-700);
+  margin: 0.5rem 0;
+}
+
+#news .h-divider {
+  background-color: var(--gray-300);
+  margin: 0.5rem 0;
+}
+
+.h-divider {
+  width: 100%;
+  height: 1px;
+}
+
+#header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: white;
-  padding: 1rem;
+  color: var(--gray-500);
+  padding: 1rem 1.5rem;
   align-items: center;
+  border-bottom: 1px solid var(--gray-200);
 }
 
 .header-right {
@@ -97,22 +127,140 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-}
-
-.search-bar i {
-  margin-right: 0.5rem;
+  color: var(--gray-900);
 }
 
 input {
   border: none;
-  background-color: var(--gray-100);
   min-height: 2rem;
   padding: 0.25rem 1rem;
   border-radius: 10rem;
   width: 100%;
+  outline: none;
 }
 
 .profile-picture {
   width: 1.5rem;
   height: 1.5rem;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 6rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.content-header {
+  padding: 1.5rem;
+  grid-column: 1/4;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: auto auto;
+}
+
+button {
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  border: none;
+  background-color: var(--gray-800);
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--gray-700);
+}
+
+.button-wrapper {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#projects {
+  grid-area: 1 / 1 / 3 / 3;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.5rem;
+  flex-grow: 1;
+}
+
+.card {
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-icons a {
+  text-decoration: none;
+  color: var(--gray-500);
+}
+
+.project-icons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: end;
+  margin-top: 1rem;
+}
+
+.content-inner {
+  grid-column: 1/4;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+#news .card {
+  gap: 1.5rem;
+}
+
+#news {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#trending {
+  grid-area: 2 / 3 / 2 / 4;
+}
+
+#trending .card {
+  display: grid;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.social-wrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.social-wrapper img {
+  border-radius: 100%;
+  width: 2rem;
+  height: 2rem;
+}
+
+.social-tag {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
 }
